@@ -1,4 +1,4 @@
-import Render from '@lobehub/chat-plugin-search-engine';
+import Render from '@aipmorg/chat-plugin-drawing';
 
 import { data } from './data';
 
