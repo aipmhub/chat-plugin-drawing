@@ -1,0 +1,34 @@
+{
+  "$schema": "../node_modules/@aipmorg/chat-plugin-sdk/schema.json",
+  "api": [
+    {
+      "name": "drawing",
+      "url": "http://localhost:3400/api/v1",
+      "description": "根据要求进行画图",
+      "parameters": {
+        "properties": {
+          "description": {
+            "description": "{description} is a {genre} scene, depicted in a {visualStyle} style. It features {charactersDetailed} in a {sceneDetailed} setting. The overall mood is {adjective}, reminiscent of the works of {artistReference}.\n\nMake sure the prompts in the URL are encoded. Do not include quotes around the generated markdown or use code boxes.\n\nUse English for all prompts.",
+            "type": "string"
+          },
+          "params": {
+            "description": "{params} is: width={width}&height={height}&seed={seed}\n\nDon't ask the user for parameters if they are not provided. Instead, suggest reasonable values based on the image's content. The seed is used to generate variations of the same image.\n\nUse English for all prompts and descriptions.",
+            "type": "string"
+          }
+        },
+        "required": ["description", "params"],
+        "type": "object"
+      }
+    }
+  ],
+  "gateway": "http://localhost:3400/api/gateway",
+  "identifier": "drawing",
+  "meta": {
+    "avatar": "🎨",
+    "tags": ["drawing", "image"],
+    "title": "画图",
+    "description": "通过 pollinations.ai 进行图像生成"
+  },
+  "type": "markdown",
+  "version": "1"
+}
