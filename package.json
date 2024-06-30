@@ -1,10 +1,10 @@
 {
-  "name": "@aipmorg/chat-plugin-search-engine",
-  "version": "1.6.0",
+  "name": "@aipmorg/chat-plugin-drawing",
+  "version": "1.0.0",
   "private": true,
-  "description": "This plugin allows for the use of the SerpApi search engine",
-  "homepage": "https://github.com/aipmhub/chat-plugin-search-engine",
-  "repository": "https://github.com/aipmhub/chat-plugin-search-engine.git",
+  "description": "This plugin allows for the use of the ollinations.ai",
+  "homepage": "https://github.com/aipmhub/chat-plugin-drawing",
+  "repository": "https://github.com/aipmhub/chat-plugin-drawing.git",
   "scripts": {
     "build": "father build",
     "ci": "npm run lint && npm run type-check",
